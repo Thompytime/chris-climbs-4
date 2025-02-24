@@ -87,6 +87,7 @@ footer a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: -2px; /* Moves text up by 2px */
 }
 
 .footer-links {
