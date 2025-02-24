@@ -183,13 +183,16 @@ footer p {
 /* Ensure all images are uniform in size */
 .gallery-item {
     width: 100%;
-    height: 250px; /* Adjust this to your preference */
+    height: 250px; /* Keep height fixed */
     overflow: hidden;
+    display: flex; /* Ensure the image is centered */
+    justify-content: center;
+    align-items: center;
 }
 
+/* Force all images to be the same size */
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures uniform image size without distortion */
+    object-fit: cover; /* Ensures images fill the box without distortion */
 }
-
