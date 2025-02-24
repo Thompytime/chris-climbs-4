@@ -180,19 +180,22 @@ footer p {
     padding: 20px;
 }
 
-/* Ensure all images are uniform in size */
+/* Ensure gallery images are uniform */
 .gallery-item {
     width: 100%;
-    height: 250px; /* Keep height fixed */
-    overflow: hidden;
-    display: flex; /* Ensure the image is centered */
-    justify-content: center;
+    height: 300px; /* Ensures all images have the same height */
+    display: flex;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ddd;
 }
 
-/* Force all images to be the same size */
+/* Make images fit perfectly inside their div */
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the box without distortion */
+    object-fit: cover; /* Crops images to fit without distortion */
+    border-radius: 10px;
 }
